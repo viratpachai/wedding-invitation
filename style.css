@@ -1,0 +1,260 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #faf5ee;
+  color: #6b1f2b;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* =========================
+   SMOOTH FADE ANIMATION
+========================= */
+.fade-in {
+  animation: fadeUp 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   ENTRY PAGE
+========================= */
+.entry-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry-box {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  max-width: 320px;
+  width: 90%;
+}
+
+.entry-box h2 {
+  margin-bottom: 20px;
+}
+
+.entry-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.entry-box button {
+  width: 100%;
+  padding: 12px;
+  background: #6b1f2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 100vh;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FLOWER IMAGES */
+.flower {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* NAMES */
+.name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 44px;
+  margin: 8px 0;
+  color: #6b1f2b;
+}
+
+.amp {
+  font-size: 26px;
+  margin: 6px 0;
+}
+
+/* TAGLINE */
+.tagline {
+  margin-top: 16px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* TAMIL TEXT */
+.tamil {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+/* =========================
+   GUEST SECTION
+========================= */
+.guest {
+  background: #fff3e8;
+  padding: 30px 16px;
+}
+
+#guestText {
+  font-size: 22px;
+  margin-bottom: 8px;
+  animation: guestFade 2s ease forwards;
+}
+
+@keyframes guestFade {
+  from {
+    opacity: 0;
+    letter-spacing: 5px;
+  }
+  to {
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+}
+
+/* =========================
+   COUNTDOWN TIMER
+========================= */
+.countdown {
+  padding: 30px 16px;
+}
+
+#timer {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* =========================
+   DETAILS SECTION
+========================= */
+.details {
+  padding: 40px 16px;
+}
+
+.details p {
+  line-height: 1.6;
+}
+
+/* MAP BUTTON */
+.map-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #6b1f2b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* =========================
+   FLOATING FLOWERS & HEARTS
+========================= */
+.floating-flowers::before {
+  content: "🌸 💖 🌸 💖 🌸";
+  position: fixed;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  animation: fall 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  from {
+    transform: translate(-50%, -10px);
+  }
+  to {
+    transform: translate(-50%, 110vh);
+  }
+}
+
+/* =========================
+   AUDIO
+========================= */
+audio {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* =========================
+   DESKTOP ADJUSTMENTS
+========================= */
+@media (min-width: 768px) {
+  .name {
+    font-size: 56px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+}
+.share {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.share h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.share-btn {
+  display: block;
+  width: 80%;
+  max-width: 320px;
+  margin: 12px auto;
+  padding: 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.share-btn:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+}
