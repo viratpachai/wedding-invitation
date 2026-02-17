@@ -70,3 +70,28 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+const loveCode = [
+  "> Initializing Love Engine...",
+  "> Loading Pachaiyappan ❤️",
+  "> Loading Saranya ❤️",
+  "> Matching values & dreams...",
+  "> Compatibility Check: SUCCESS ✅",
+  "> Families Approval: GRANTED 🙏",
+  "> Love.commit('Forever') 💍",
+  "> Deployment Date: 18/05/2026 🚀"
+];
+
+let index = 0;
+const speed = 700;
+const codeText = document.getElementById("codeText");
+
+function typeLoveCode() {
+  if (index < loveCode.length) {
+    codeText.innerHTML += loveCode[index] + "\n";
+    index++;
+    setTimeout(typeLoveCode, speed);
+  }
+}
+
+window.addEventListener("load", typeLoveCode);
