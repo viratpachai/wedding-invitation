@@ -258,3 +258,29 @@ audio {
 .whatsapp {
   background: linear-gradient(45deg, #25D366, #128C7E);
 }
+
+.love-code-section {
+  padding: 50px 16px;
+  background: #0d0d0d;
+}
+
+.section-title {
+  color: gold;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.code-box {
+  background: #000;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0, 255, 156, 0.2);
+  min-height: 220px;
+}
